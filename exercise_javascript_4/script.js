@@ -15,15 +15,15 @@ function updateGlobalTime() {
     utcTime.textContent = `UTC Time: ${utcTimeStr}`;
   }
   
-  function startGlobalTimer() {
+function startGlobalTimer() {
       setInterval(updateGlobalTime, 1000);
   }
   
-  let button = document.getElementById("globalTimerButton");
+let button = document.getElementById("globalTimerButton");
   
-  button.addEventListener('click', startGlobalTimer);
+button.addEventListener('click', startGlobalTimer);
   
-  function updateLocalTime() {
+function updateLocalTime() {
     let localTime = document.getElementById("local-time");
   
     const localHours = new Date().getHours();
@@ -39,10 +39,10 @@ function updateGlobalTime() {
     localTime.textContent =  `Local Time: ${localTimeStr}`;
   }
   
-  function startLocalTimer() {
+function startLocalTimer() {
     setInterval(updateLocalTime, 1000);
   }
   
-  let button2 = document.getElementById("localTimerButton");
+let button2 = document.getElementById("localTimerButton");
   
-  button2.addEventListener('click', startLocalTimer);
+button2.addEventListener('click', startLocalTimer);
