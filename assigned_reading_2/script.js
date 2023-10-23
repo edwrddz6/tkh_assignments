@@ -25,5 +25,30 @@ for (let number = 0; number <= 100; number = number + 1) {
 }
 
 
+// Exercise #3 : Chessboard
+
+// I had difficulty understanding. I attempted to solve the problem but I couldn't find the answer.
+
+let chess = ""
+let size = 8
+
+for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
+    if ((i + j) % 2 === 0) {
+        chess += " ";
+    } else {
+        chess += "#";
+        }
+    }
+}
+
+console.log(chess);
+
+
+
+
+
+
+
 
 
